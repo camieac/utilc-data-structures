@@ -1,10 +1,10 @@
 /**
-* @file test-utilc-template.c
+* @file test-utilc-data-structures.c
 * @author Cameron A. Craig
-* @date 28 Dec 2016
+* @date 18 Feb 2017
 * @version 0.1.0
-* @copyright 2016 Cameron A. Craig
-* @brief Unit tests for utilc-template.
+* @copyright 2017 Cameron A. Craig
+* @brief Unit tests for utilc-data-structures.
 * -- RULE_3_2_CD_do_not_use_special_characters_in_filename
 * -- RULE_8_1_A_provide_file_info_comment
 
@@ -18,7 +18,7 @@
 #include <unistd.h>
 #include <check.h>
 
-#include "utilc-template.h"
+#include "utilc-data-structures.h"
 
 /************************
 * Test Case Setup and teardown
@@ -28,7 +28,7 @@
 * @brief Setup
 * @details Checked fixture: Runs for each unit test.
 */
-void uc_template_test_setup(void){
+void uc_data_structures_test_setup(void){
 
 }
 
@@ -36,7 +36,7 @@ void uc_template_test_setup(void){
 * @brief Teardown
 * @details Checked fixture: Runs for each unit test.
 */
-void uc_template_test_teardown(void){
+void uc_data_structures_test_teardown(void){
 
 }
 
@@ -44,23 +44,22 @@ void uc_template_test_teardown(void){
 * Unit Tests
 ************************/
 
-START_TEST (test_template){
-	uint32_t ret = uc_template_function();
-	fail_if(!ret);
+START_TEST (test_dummy){
+	fail_if(1 == 0);
 }
 END_TEST
 
 
 
 /**
-* @brief Defines test suite for utilc-template lib.
+* @brief Defines test suite for utilc-data-structures lib.
 */
 Suite* utilc_test_suite (void) {
-				Suite *suite = suite_create("utilc_timing_test_suite");
+				Suite *suite = suite_create("utilc_data_structures_test_suite");
 
-				TCase *tempate_tcase = tcase_create("Template Test Case");
-				tcase_add_checked_fixture(tempate_tcase, uc_template_test_setup, uc_template_test_teardown);
-				tcase_add_test(tempate_tcase, test_template);
+				TCase *tempate_tcase = tcase_create("Dummy Test Case");
+				tcase_add_checked_fixture(tempate_tcase, uc_data_structures_test_setup, uc_data_structures_test_teardown);
+				tcase_add_test(tempate_tcase, test_dummy);
 				suite_add_tcase(suite, tempate_tcase);
 
 				return suite;

@@ -1,18 +1,17 @@
 /**
-* @file utilc-template-example.c
+* @file utilc-data-structures-example.c
 * @author Cameron A. Craig
-* @date 27 Nov 2016
+* @date 18 Feb 2017
 * @version 0.1.0
-* @copyright 2016 Cameron A. Craig
+* @copyright 2017 Cameron A. Craig
 * @brief Example usage of utilc-template library.
 * -- RULE_3_2_CD_do_not_use_special_characters_in_filename
 * -- RULE_8_1_A_provide_file_info_comment
 */
-#include <utilc-template.h>
+#include <utilc-data-structures.h>
 
 #include <stdlib.h>
 
 int main (int argc, char *argv[]){
-	uc_template_function();
 	return EXIT_SUCCESS;
 }

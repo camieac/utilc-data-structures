@@ -2,26 +2,26 @@
 
 [//]: # (Remove all of these comments when done.)
 
-# utilc-template
+# utilc-data-structures
 
 ## Introduction
-_This section of the README file introduces the library to developers._
 
-`utilc-template` contains templates for creating a new `utilc` library.
-All `utilc` projects try to keep to this template wherever possible.
+`utilc-data-structures` contains C implementations of commmon data structures.
 
+Currently available data structures:
+- singly linked list
+- doubly linked list
 
 ## Purpose
-_Describe why this library is useful to the developer. What problems does this library solve?_
 
-This template saves the hassle of manually creating all the files that form a `utilc` library.
+This library provides data structure implementations to programmers, for a multitude of applications.
 
 ## Code Example
 _Provide a code example showing the library API, try to keep the code nice and condensed.
 Don't bother with error checking, include comments if necessary.
 Provide a link to the example file, as shown below._
 
-A full example, making use of the full `utilc-template` API is available in [example](https://github.com/camieac/utilc-template/blob/master/example/utilc-template-example.c). A shortened example is given below:
+A full example, making use of the full `utilc-data-structures` API is available in [example](https://github.com/camieac/utilc-template/blob/master/example/utilc-template-example.c). A shortened example is given below:
 ```
 uc_template_h template;
 uc_template_create(template)
@@ -30,7 +30,7 @@ uc_template_create(template)
 ## Installation
 _Provide basic installation instructions, whilst also linking to more detailed installation instructions._
 
-This project uses [CMake](https://cmake.org/) to build, test, and install `utic-timing`. Installation instructions are contained within [INSTALL.md](https://github.com/camieac/utilc-template/blob/master/INSTALL.md), and summarised below:
+This project uses [CMake](https://cmake.org/) to build, test, and install `utic-data-structures`. Installation instructions are contained within [INSTALL.md](https://github.com/camieac/utilc-template/blob/master/INSTALL.md), and summarised below:
 
 ```
 git clone https://github.com/camieac/utilc-template.git
